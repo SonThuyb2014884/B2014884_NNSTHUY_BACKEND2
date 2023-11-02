@@ -8,7 +8,7 @@ router.route("/")
     .post(contacts.create)
     .delete(contacts.deleteAll);
 
-router.route(": http://localhost:3000/api/contacts/favorite.")
+router.route("/favorite")
     .get(contacts.findAllFavorite);
 
 router.route("/:id")
